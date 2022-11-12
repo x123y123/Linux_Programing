@@ -1,8 +1,12 @@
-$ sudo make 
-$ sudo insmod hello_world.ko
-$ sudo rmmod hello_world
-$ lsmod
+## complie kernel_module
+  $ sudo make 
+## load kernel_module
+  $ sudo insmod hello_world.ko
+## remove kernel_module
+  $ sudo rmmod hello_world
+## list module loaded
+  $ lsmod
 
-using first line to complie kernel_module,
-using sencond line to load kernel_module;
-using third line to remove kernel_module;
+
+
+
