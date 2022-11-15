@@ -1,6 +1,7 @@
 /* an example about race condition in thread */
 /* two workers want to use same computer ,it will cause race condition*/
 
+// mutex lock define happens-before relationship 
 
 #include <stdio.h>
 #include <stdlib.h>
