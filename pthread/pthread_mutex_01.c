@@ -3,6 +3,7 @@
 
 // mutex lock define happens-before relationship 
 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -12,11 +13,18 @@ pthread_mutex_t lock;
 
 void *cmp_use()                             // correct ans will be 400000000, but if not lock it will go wrong
 {
-    for (int i = 0; i < 200000000; i++) {
-        pthread_mutex_lock(&lock);          // lock
-        cmp_use_times++;                    // if one of workers use computer, it will cnt
-        pthread_mutex_unlock(&lock);        // unlock
+    for (int i = 0; i < 200000000; i++) {   // coarse grained lock
+        pthread_mutex_lock(&lock);          
+        cmp_use_times++;                    
+        pthread_mutex_unlock(&lock);        
     }
+/*  
+    pthread_mutex_lock(&lock);		
+    for (int i = 0; i < 200000000; i++) {   // fined grained lock
+        cmp_use_times++;                             
+    }
+    pthread_mutex_unlock(&lock);
+*/
 }
 
 int main(int argc ,char **argv)
