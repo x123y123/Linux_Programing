@@ -1,1 +1,0 @@
-cmd_/home/tony/Desktop/Linux_Programing/kernel_module/hello_world/Module.symvers := sed 's/\.ko$$/\.o/' /home/tony/Desktop/Linux_Programing/kernel_module/hello_world/modules.order | scripts/mod/modpost -m -a  -o /home/tony/Desktop/Linux_Programing/kernel_module/hello_world/Module.symvers -e -i Module.symvers   -T -

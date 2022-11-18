@@ -1,1 +1,0 @@
-cmd_/home/tony/Desktop/Linux_Programing/kernel_module/hello_world/modules.order := {   echo /home/tony/Desktop/Linux_Programing/kernel_module/hello_world/hello_world.ko; :; } | awk '!x[$$0]++' - > /home/tony/Desktop/Linux_Programing/kernel_module/hello_world/modules.order
