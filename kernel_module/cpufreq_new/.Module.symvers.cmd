@@ -1,1 +1,0 @@
-cmd_/home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/Module.symvers := sed 's/\.ko$$/\.o/' /home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/modules.order | scripts/mod/modpost -m -a  -o /home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/Module.symvers -e -i Module.symvers   -T -

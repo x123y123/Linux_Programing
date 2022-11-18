@@ -1,1 +1,0 @@
-cmd_/home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/cpufreq.mod := { echo  /home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/cpufreq.o;  echo; } > /home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/cpufreq.mod
