@@ -1,0 +1,1 @@
+cmd_/home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/cpufreq.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/cpufreq.ko /home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/cpufreq.o /home/tony/Desktop/Linux_Programing/kernel_module/cpufreq_new/cpufreq.mod.o;  true
